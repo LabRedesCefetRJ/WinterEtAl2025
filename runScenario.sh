@@ -14,6 +14,10 @@ then
     sudo apt install linux-headers-`uname -r` -y
     sudo apt install jason-embedded chonos-serial-port-emulator chonos-simulide xterm -y
     clear
+    if [[ ! -e "$SERIALPORT" ]] 
+    then
+        sudo dpkg-reconfigure chonos-serial-port-emulator
+    fi
 else
     echo "The computer has JasonEmbedded and SimulIDE"
 fi
@@ -22,7 +26,7 @@ cd alimentador
 chonos-simulide alimentador.sim1 &
 
 echo "Starting Simulation..."
-sleep 3
+sleep 10
 
 cd ../mas1/
 xterm -T "Multiagent System 1" -e jasonEmbedded mas1.mas2j &
