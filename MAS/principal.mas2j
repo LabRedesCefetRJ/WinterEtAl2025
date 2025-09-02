@@ -1,0 +1,10 @@
+MAS principal {
+	infrastructure: Centralised
+	agents:
+		bane agentArchClass jason.Argo;
+		uhura agentArchClass Communicator;
+		alice agentArchClass jason.Mailer;
+		kirk agentArchClass Communicator;
+	aslSourcePath:
+		"asl";
+}
