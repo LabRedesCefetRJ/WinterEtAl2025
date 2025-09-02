@@ -1,0 +1,8 @@
+MAS mas2 {
+	infrastructure: Centralised
+	agents:
+		alice agentArchClass jason.Mailer;
+		kirk agentArchClass Communicator;
+	aslSourcePath:
+		"asl";
+}

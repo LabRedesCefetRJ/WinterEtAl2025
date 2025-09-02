@@ -1,0 +1,8 @@
+MAS mas1 {
+	infrastructure: Centralised
+	agents:
+		bane agentArchClass jason.Argo;
+		uhura agentArchClass Communicator;
+	aslSourcePath:
+		"asl";
+}

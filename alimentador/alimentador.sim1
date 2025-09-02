@@ -4,9 +4,9 @@
 <mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="alimentador.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
 </item>
 
-<item itemtype="SerialPort" CircId="SerialPort-2" mainComp="false" Show_id="true" Show_Val="false" Pos="772,620" rotation="-90" hflip="1" vflip="1" label="Computer USBPort" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="true" Port="/dev/ttyExogenous1" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+<item itemtype="SerialPort" CircId="SerialPort-2" mainComp="false" Show_id="true" Show_Val="false" Pos="772,620" rotation="-90" hflip="1" vflip="1" label="Computer USBPort" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="true" Port="/dev/ttyExogenous2" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
 
-<item itemtype="Servo" CircId="Servo-3" mainComp="false" Show_id="true" Show_Val="false" Pos="1104,556" rotation="0" hflip="1" vflip="1" label="POTE" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Speed="0.2 _s/60º" MinPulse="1000 _µs" MaxPulse="2000 _µs" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" />
+<item itemtype="Servo" CircId="Servo-3" mainComp="false" Show_id="true" Show_Val="false" Pos="1088,564" rotation="-90" hflip="1" vflip="1" label="POTE" idLabPos="69.3342,-14.3009" labelrot="90" valLabPos="-16,20" valLabRot="0" Speed="0.2 _s/60º" MinPulse="1000 _µs" MaxPulse="2000 _µs" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" />
 
 <item itemtype="Push" CircId="Push-6" mainComp="false" Show_id="true" Show_Val="false" Pos="796,708" rotation="0" hflip="1" vflip="1" label="Preencher" idLabPos="-22.9557,19.8742" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" Key="P" />
 
@@ -20,6 +20,8 @@
 
 <item itemtype="Led" CircId="Led-29" mainComp="false" Show_id="true" Show_Val="false" Pos="896,552" rotation="-90" hflip="1" vflip="1" label="Ração 2" idLabPos="11.3838,10.3819" labelrot="90" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
 
+<item itemtype="TextComponent" CircId="TextComponent-40" mainComp="false" Show_id="false" Show_Val="false" Pos="1028,556" rotation="0" hflip="1" vflip="1" label="TextComponent-40" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 _px" Border="0 _px" Color="#ffffdc" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="false" Text="vazio" />
+
 <item itemtype="Node" CircId="Node-16" mainComp="false" Pos="884,692" />
 
 <item itemtype="Node" CircId="Node-22" mainComp="false" Pos="940,692" />
@@ -28,9 +30,7 @@
 
 <item itemtype="Node" CircId="Node-30" mainComp="false" Pos="884,512" />
 
-<item itemtype="Node" CircId="Node-33" mainComp="false" Pos="1028,540" />
-
-<item itemtype="Node" CircId="Node-34" mainComp="false" Pos="896,520" />
+<item itemtype="Node" CircId="Node-39" mainComp="false" Pos="1028,644" />
 
 <item itemtype="Connector" uid="Connector-4" startpinid="Uno-1-1" endpinid="SerialPort-2-pin1" pointList="828,632,828,660,780,660" />
 
@@ -56,8 +56,6 @@
 
 <item itemtype="Connector" uid="Connector-75" startpinid="Node-22-2" endpinid="Node-24-0" pointList="940,692,992,692" />
 
-<item itemtype="Connector" uid="Connector-88" startpinid="Servo-3-in2" endpinid="Uno-1-9" pointList="1056,572,1056,644,900,644,900,632" />
-
 <item itemtype="Connector" uid="Connector-89" startpinid="Uno-1-6" endpinid="Led-28-lPin" pointList="868,632,868,568" />
 
 <item itemtype="Connector" uid="Connector-90" startpinid="Uno-1-7" endpinid="Led-29-lPin" pointList="876,632,876,576,896,576,896,568" />
@@ -66,16 +64,16 @@
 
 <item itemtype="Connector" uid="Connector-94" startpinid="Node-30-2" endpinid="Uno-1-GND0" pointList="884,512,884,488" />
 
-<item itemtype="Connector" uid="Connector-102" startpinid="Servo-3-in0" endpinid="Node-33-1" pointList="1056,540,1028,540" />
+<item itemtype="Connector" uid="Connector-122" startpinid="Servo-3-in2" endpinid="Uno-1-9" pointList="1104,612,1104,660,900,660,900,632" />
 
-<item itemtype="Connector" uid="Connector-103" startpinid="Uno-1-5V0" endpinid="Node-33-0" pointList="900,488,900,472,1028,472,1028,540" />
+<item itemtype="Connector" uid="Connector-123" startpinid="Led-29-rPin" endpinid="Node-30-0" pointList="896,536,896,512,884,512" />
 
-<item itemtype="Connector" uid="Connector-104" startpinid="Node-33-2" endpinid="Node-24-2" pointList="1028,540,1028,692,992,692" />
+<item itemtype="Connector" uid="Connector-125" startpinid="Servo-3-in1" endpinid="Uno-1-GND2" pointList="1088,612,1088,652,940,652,940,632" />
 
-<item itemtype="Connector" uid="Connector-105" startpinid="Servo-3-in1" endpinid="Node-34-1" pointList="1056,556,1004,556,1004,520,896,520" />
+<item itemtype="Connector" uid="Connector-126" startpinid="Servo-3-in0" endpinid="Node-39-1" pointList="1072,612,1072,644,1028,644" />
 
-<item itemtype="Connector" uid="Connector-106" startpinid="Led-29-rPin" endpinid="Node-34-0" pointList="896,536,896,520" />
+<item itemtype="Connector" uid="Connector-127" startpinid="Uno-1-5V0" endpinid="Node-39-0" pointList="900,488,900,472,1028,472,1028,644" />
 
-<item itemtype="Connector" uid="Connector-107" startpinid="Node-34-2" endpinid="Node-30-0" pointList="896,520,896,512,884,512" />
+<item itemtype="Connector" uid="Connector-128" startpinid="Node-39-2" endpinid="Node-24-2" pointList="1028,644,1028,692,992,692" />
 
 </circuit>
